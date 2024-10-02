@@ -1,81 +1,50 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="es">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-by-Moorcam.css">
 </head>
 
 <body class="bg-dark">
-    <header cl>
+    <header>
         <nav class="navbar bg-black">
-            <div class="container-fluid">
-                <a class="navbar-brand text-light">Sergio Matossi</a>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+            <div class="container-fluid"><a class="navbar-brand text-light">Sergio Matossi</a>
+                <form class="d-flex" role="search"><input class="form-control me-2" type="search" aria-label="Search" placeholder="Search"><button class="btn btn-outline-success" type="submit">Search</button></form>
             </div>
         </nav>
     </header>
     <main>
-        <div class="p-5 text-center bg-image" style="
-      background-image: url('https://wallpapers.com/images/featured/fondos-de-gradiente-morado-rmfznb3wauiky4u8.jpg');
-      height: 400px;
-    ">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="text-center p-5 bg-image" data-aos="fade-up" style="background-image: url('https://wallpapers.com/images/featured/fondos-de-gradiente-morado-rmfznb3wauiky4u8.jpg');height: 400px;padding-bottom: 0px;">
+            <div class="mask" style="background-color:rgba(0, 0, 0, 0.6);">
                 <div class="d-flex justify-content-center align-items-center h-100">
-                    <div class="text-white">
-                        <br>
+                    <div class="text-white"><br>
                         <h1 class="mb-3">Sergio Matossi</h1>
-                        <h4 class="mb-3">Bienvenido a mi pagina personal</h4>
-                        <br>
+                        <h4 class="mb-3">Bienvenido a mi pagina personal</h4><br>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="accordion accordion-flush w-100 p-3" id="accordionFlushExample">
+        <div class="accordion accordion-flush w-100 p-3" role="tablist" data-aos="zoom-in" id="accordionFlushExample" style="padding-left: 0px;">
             <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Sobre mi
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Soy Sergio Matossi, un chico de 19 años residente en españa que desde
-                        siempre le han interesado los ordenadores</div>
+                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> Sobre mi </button></h2>
+                <div class="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#accordionFlushExample" id="flush-collapseOne">
+                    <div class="accordion-body"><span>Soy Sergio Matossi, un chico de 19 años residente en españa que desde siempre le han interesado los ordenadores</span></div>
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Donde he estudiado
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Comenze mis estudios post-obligatorios en Salesianos Pamplona donde
-                        estudie Sistemas microinformaticos y redes durante 2 años y tras terminar eso fui a estudiar a
-                        Cuatrovientos para cursar Administracion de sistemas informaticos en red</div>
+                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"> Donde he estudiado </button></h2>
+                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordionFlushExample" id="flush-collapseTwo">
+                    <div class="accordion-body"><span>Comenze mis estudios post-obligatorios en Salesianos Pamplona donde estudie Sistemas microinformaticos y redes durante 2 años y tras terminar eso fui a estudiar a Cuatrovientos para cursar Administracion de sistemas informaticos en red</span></div>
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Intereses personales
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample">
+                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"> Intereses personales </button></h2>
+                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordionFlushExample" id="flush-collapseThree">
                     <div class="accordion-body">
                         <ul>
                             <li>Informatica</li>
@@ -87,59 +56,50 @@
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-                <div class="text-white">
-                    <br>
-                    <h1 class="mb-3">Proyectos</h1>
-                    <br>
+        <div class="mask" style="background-color:rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100" style="margin-bottom: 23px;">
+                <div class="text-white"><br>
+                    <h1 class="mb-3">Proyectos</h1><br>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="zoom-in-right" style="margin-bottom: 48px;">
                     <div class="card">
-
                         <div class="card-body">
                             <h5 class="card-title">Proyecto I3</h5>
-                            <p class="card-text">El proyecto I3 es un proyecto de investigacion y desarrollo llevado a cabo en cuatrovientos con la colaboracion de Salesianos Pamplona que tiene la mision de ayudar a personas con problemas en el aula a la hora de entender el temario</p>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/2FSpEGktXC8?si=6XbHhJCR0YvEZkJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="card-text">El proyecto I3 es un proyecto de investigacion y desarrollo llevado a cabo en cuatrovientos con la colaboracion de Salesianos Pamplona que tiene la mision de ayudar a personas con problemas en el aula a la hora de entender el temario</p><iframe width="100%" height="315" src="https://www.youtube.com/embed/2FSpEGktXC8?si=6XbHhJCR0YvEZkJI" title="YouTube video player" frameborder="0" allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="zoom-in-left">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Humble Squid Craft Games 3</h5>
-                            <p class="card-text">He sido creador de eventos en mincraft con una participacion mayor de 50 jugadores y una media de espectadores de mas de 1000 personas en total, en el se llevo a cambo varios juegos insipirados en la serie de squid games de netflix</p>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/eAW9o6XNoxw?si=seksNX8H4iYxr8v1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="card-text">He sido creador de eventos en mincraft con una participacion mayor de 50 jugadores y una media de espectadores de mas de 1000 personas en total, en el se llevo a cambo varios juegos insipirados en la serie de squid games de netflix</p><iframe width="100%" height="315" src="https://www.youtube.com/embed/eAW9o6XNoxw?si=seksNX8H4iYxr8v1" title="YouTube video player" frameborder="0" allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <br>
-        <br>
+        <section class="shadow contact-clean" data-aos="zoom-in" style="background: rgb(3,77,139);">
+            <form class="bg-light border rounded border-secondary shadow-lg" method="post" style="background: rgb(248,248,249);">
+                <h2 class="text-center">Contactame</h2>
+                <div class="form-group mb-3"><input class="form-control" type="text" name="name" placeholder="Nombre"></div>
+                <div class="form-group mb-3"><input class="form-control" type="text" name="phone" placeholder="Telefono" inputmode="tel"></div>
+                <div class="form-group mb-3"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+                <div class="form-group mb-3"><textarea class="form-control" name="message" placeholder="Mensaje" rows="14"></textarea></div>
+                <div class="form-group mb-3"><button class="btn btn-primary" type="submit">Enviar</button></div>
+            </form>
+        </section><br><br>
     </main>
-    <footer class="bg-body-tertiary text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            Sergio Matossi 2024 2ºASIR
-        </div>
-        <!-- Copyright -->
+    <footer class="text-center text-lg-start bg-body-tertiary">
+        <div class="text-center p-3" style="background-color:rgba(0, 0, 0, 0.05);"><span> Sergio Matossi 2024 2ºASIR </span></div>
     </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
 </body>
 
 </html>
