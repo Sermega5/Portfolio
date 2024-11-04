@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "proyectos";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+$sql = " SELECT * FROM proyectos";
+$result = $conn->query($sql);
+$conn->close();
+?>
+
 <html data-bs-theme="light" lang="es">
 
 <head>
@@ -79,32 +90,20 @@
         </div>
         <div class="container">
             <div class="row">
+            <?php
+                    while ($rows = $result->fetch_assoc()) {
+                        ?>
                 <div class="col-md-6" data-aos="zoom-in-right" style="margin-bottom: 48px;">
                     <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto I3</h5>
-                            <p class="card-text">El proyecto I3 es un proyecto de investigacion y desarrollo llevado a
-                                cabo en cuatrovientos con la colaboracion de Salesianos Pamplona que tiene la mision de
-                                ayudar a personas con problemas en el aula a la hora de entender el temario</p><iframe
-                                width="100%" height="315"
-                                src="https://www.youtube.com/embed/2FSpEGktXC8?si=6XbHhJCR0YvEZkJI"
-                                title="YouTube video player" frameborder="0" allowfullscreen=""></iframe>
-                        </div>
+                    <img src="proyectos\<?php echo $rows['image']; ?>" height="116" width="304" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title"><?php echo $rows['title']; ?></h5>
+                    <p class="card-text"><?php echo $rows['description']; ?></p>
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="zoom-in-left">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Humble Squid Craft Games 3</h5>
-                            <p class="card-text">He sido creador de eventos en mincraft con una participacion mayor de
-                                50 jugadores y una media de espectadores de mas de 1000 personas en total, en el se
-                                llevo a cambo varios juegos insipirados en la serie de squid games de netflix</p><iframe
-                                width="100%" height="315"
-                                src="https://www.youtube.com/embed/eAW9o6XNoxw?si=seksNX8H4iYxr8v1"
-                                title="YouTube video player" frameborder="0" allowfullscreen=""></iframe>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                    }
+                    ?>
             </div>
         </div>
         <div class="bg-info">
