@@ -1,5 +1,9 @@
 Descripción del Proyecto
 
+Instalación
+
+Debes tener una base de datos vinculada a la pagina web con la base de datos creada a traves del sql facilitado en el repositorio
+
 Este proyecto es una página personal de presentación de Sergio Matossi, diseñada para mostrar información sobre mí, mis estudios, intereses y proyectos en los que he trabajado. La página utiliza tecnologías modernas de desarrollo web y se enfoca en una experiencia de usuario intuitiva y atractiva.
 Tecnologías Utilizadas
 
